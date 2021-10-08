@@ -1,5 +1,6 @@
 ### Kotlin DSL
 
+#
 #### Migrations 
 
 [Android Doc](https://developer.android.com/studio/build/migrate-to-kts)
@@ -16,6 +17,7 @@
 
 [medium](https://medium.com/android-dev-hacks/kotlin-dsl-gradle-scripts-in-android-made-easy-b8e2991e2ba)
 
+#
 #### Custom Plugins
 
 [gradle](https://docs.gradle.org/current/userguide/custom_plugins.html)
@@ -24,6 +26,7 @@
 
 [musings](https://musings.animus.design/kotlin-poet-building-a-gradle-plugin/)
 
+#
 #### Other
 
 Configure kotlinOptions [github](https://github.com/gradle/gradle/issues/11083)
@@ -32,6 +35,7 @@ Version Types [Android Doc](https://developer.android.com/studio/build/build-var
 
 Share config [engineering](https://engineering.matchesfashion.com/share-your-gradle-configuration-with-the-gradle-kotlin-dsl-a-guide-for-android-projects-3ce6dc34ea75)
 
+#
 #### Examples
 
 [Github](https://github.com/cortinico/kotlin-android-template)
