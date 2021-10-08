@@ -18,11 +18,11 @@
 
 #### Custom Plugins
 
-Custom Plugin [gradle](https://docs.gradle.org/current/userguide/custom_plugins.html)
+[gradle](https://docs.gradle.org/current/userguide/custom_plugins.html)
 
-Custom Plugin [medium](https://medium.com/@magicbluepenguin/how-to-create-your-first-custom-gradle-plugin-efc1333d4419)
+[medium](https://medium.com/@magicbluepenguin/how-to-create-your-first-custom-gradle-plugin-efc1333d4419)
 
-Custom Plugin [musings](https://musings.animus.design/kotlin-poet-building-a-gradle-plugin/)
+[musings](https://musings.animus.design/kotlin-poet-building-a-gradle-plugin/)
 
 #### Other
 
