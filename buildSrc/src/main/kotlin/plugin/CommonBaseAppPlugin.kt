@@ -5,7 +5,9 @@ import defaultImplementation
 import extentions.*
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import org.gradle.api.tasks.Exec
 import org.gradle.kotlin.dsl.dependencies
+import org.gradle.kotlin.dsl.task
 import org.gradle.kotlin.dsl.withGroovyBuilder
 
 class CommonBaseAppPlugin : Plugin<Project> {
@@ -15,13 +17,19 @@ class CommonBaseAppPlugin : Plugin<Project> {
             applyPlugins()
             androidConfig()
             dependenciesConfig()
+            tasks()
         }
 
     private fun Project.applyPlugins() {
         plugins.run {
             apply("kotlin-android")
-            apply("kotlin-android-extensions")
+//            apply("kotlin-android-extensions")
             apply("kotlin-kapt")
+        }
+
+        apply {
+            from("$rootDir/config/ktlint.gradle.kts")
+//            from("$rootDir/config/detekt/detekt.gradle.kts")
         }
     }
 
@@ -50,6 +58,12 @@ class CommonBaseAppPlugin : Plugin<Project> {
         dependencies {
             defaultImplementation()
             defaultAndroidTestImplementation()
+        }
+    }
+
+    private fun Project.tasks() {
+        task<Exec>("TEST") {
+            commandLine("echo", "test")
         }
     }
 }

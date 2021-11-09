@@ -19,6 +19,10 @@ class CommonKotlinBaseAppPlugin : Plugin<Project> {
             apply("java-library")
             apply("kotlin")
         }
+
+        apply {
+            from("$rootDir/config/ktlint.gradle.kts")
+        }
     }
 
     private fun Project.dependenciesConfig() {

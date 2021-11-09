@@ -1,6 +1,7 @@
 import extentions.androidTestImplementation
 import extentions.implementation
 import extentions.testImplementation
+import org.gradle.api.Project
 import org.gradle.api.artifacts.dsl.DependencyHandler
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
@@ -18,8 +19,11 @@ object Dependencies {
     private const val coreKtx = "androidx.core:core-ktx:${Versions.coreKtx}"
     private const val constraintLayout =
         "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
-     private const val navigationF = "androidx.navigation:navigation-fragment-ktx:${Versions.navigationUI}"
-     private const val navigationUI = "androidx.navigation:navigation-ui-ktx:${Versions.navigationUI}"
+    private const val navigationF =
+        "androidx.navigation:navigation-fragment-ktx:${Versions.navigationUI}"
+    private const val navigationUI =
+        "androidx.navigation:navigation-ui-ktx:${Versions.navigationUI}"
+
     /**
      * Tests
      */
@@ -72,3 +76,4 @@ fun DependencyHandlerScope.defaultAndroidTestImplementation() {
     androidTestImplementation(Dependencies.androidTestLibraries)
     testImplementation(Dependencies.testLibraries)
 }
+

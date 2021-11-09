@@ -1,7 +1,6 @@
 plugins {
     id("com.android.application")
     id("base-app-plugin")
-    id("kotlin-android")
 }
 
 dependencies {
@@ -9,4 +8,3 @@ dependencies {
     implementation(project(":data"))
     implementation(project(":domain"))
 }
-

@@ -14,6 +14,14 @@ val Project.android: BaseExtension
 fun Project.moduleIsLibrary(): Boolean {
     return pluginManager.findPlugin("com.android.library")?.let {
         true
+    } ?: pluginManager.findPlugin("java-library")?.let {
+        true
+    } ?: false
+}
+
+fun Project.moduleIsJavaLibrary(): Boolean {
+    return pluginManager.findPlugin("java-library")?.let {
+        true
     } ?: false
 }
 
@@ -29,8 +37,8 @@ fun BaseExtension.appVersions(moduleIsLibrary: Boolean) {
         if (!moduleIsLibrary) {
             applicationId = App.id
         }
-        minSdkVersion(App.minSdk)
-        targetSdkVersion(App.targetSdk)
+        minSdk = App.minSdk
+        targetSdk = App.targetSdk
         versionCode = App.versionCode
         versionName = App.versionName
 

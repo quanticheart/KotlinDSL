@@ -26,6 +26,8 @@
 
 [musings](https://musings.animus.design/kotlin-poet-building-a-gradle-plugin/)
 
+[Using apply(from...)](https://github.com/gradle/kotlin-dsl-samples/issues/1287)
+
 #
 #### Other
 
@@ -43,3 +45,12 @@ Share config [engineering](https://engineering.matchesfashion.com/share-your-gra
 [Github](https://github.com/chiragkunder/gradle-kotlin-dsl-sample)
 
 [Github](https://github.com/gradle/kotlin-dsl-samples)
+
+
+#
+### Spoteless
+Simple implementation [medium](https://medium.com/@int_32/android-project-code-style-using-spotless-and-ktlint-5422fd90976c)
+
+### KTLint
+https://github.com/pinterest/ktlint
+
